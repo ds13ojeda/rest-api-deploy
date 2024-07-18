@@ -2,7 +2,7 @@
 GET http://localhost:1234/movies
 
 ### Recuperar una película por id
-GET http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+GET http://localhost:1234/movies/637c9659-4222-11ef-a163-bce92fbffc24
 
 ### Recuperar todas las películas por un género
 GET http://localhost:1234/movies?genre=Drama
@@ -11,9 +11,16 @@ GET http://localhost:1234/movies?genre=Drama
 POST http://localhost:1234/movies
 Content-Type: application/json
 
-{
-  "rate": 8.5
+{ 
+  "title": "The Social Network",
+  "year": 2010,
+  "director": "David Fincher",
+  "duration": 120,
+  "poster": "https://i.pinimg.com/originals/7e/37/b9/7e37b994b613e94cba64f307b1983e39.jpg",
+  "genre": ["Drama"],
+  "rate": 7.7
 }
+
 
 ### Actualizar una película
 PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
